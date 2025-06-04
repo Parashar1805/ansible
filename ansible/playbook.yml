@@ -2,11 +2,10 @@
   hosts: web
   become: yes
 
-tasks:
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
-        src: "/home/unified/mavenansible/target/mavenansible.war"
+        src: "/home/unified/.m2/repository/com/example/mavenansible/1.0-SNAPSHOT/mavenansible-1.0-SNAPSHOT.war"
         dest: "/opt/tomcat/webapps/mavenansible.war"
         remote_src: no
 
