@@ -10,7 +10,4 @@ tasks:
         dest: "/opt/tomcat/webapps/mavenansible.war"
         remote_src: no
 
-  - name: Restart Tomcat
-    service:
-      name: tomcat
-      state: restarted
+  
